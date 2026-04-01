@@ -102,29 +102,29 @@ export function Contact() {
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
             className="relative"
           >
-            <div className="glass p-12 md:p-20 rounded-[4rem] border border-white/40 shadow-2xl relative z-10 overflow-hidden text-center space-y-10">
+            <div className="glass p-8 md:p-16 lg:p-20 rounded-[3rem] md:rounded-[4rem] border border-white/40 shadow-2xl relative z-10 overflow-hidden text-center space-y-8 md:space-y-10">
                {/* Visual Accent */}
                <div className="flex justify-center mb-8">
-                  <div className="w-24 h-24 rounded-[2rem] bg-primary/10 flex items-center justify-center animate-pulse">
-                    <Sparkles className="h-10 w-10 text-primary" />
+                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-[1.5rem] md:rounded-[2rem] bg-primary/10 flex items-center justify-center animate-pulse">
+                    <Sparkles className="h-8 w-8 md:h-10 md:w-10 text-primary" />
                   </div>
                </div>
 
                <div className="space-y-6">
-                <h3 className="font-serif text-4xl md:text-5xl font-medium text-foreground tracking-tight">Consultoria <br /> <span className="italic font-light opacity-60">Personalizada</span></h3>
-                <p className="text-muted-foreground leading-relaxed text-[15px] font-light max-w-md mx-auto">
+                <h3 className="font-serif text-3xl md:text-5xl font-medium text-foreground tracking-tight">Consultoria <br /> <span className="italic font-light opacity-60">Personalizada</span></h3>
+                <p className="text-muted-foreground leading-relaxed text-sm md:text-[15px] font-light max-w-md mx-auto">
                   Sem formulários, sem esperas. Fale diretamente com nossa especialista e receba um atendimento exclusivo via WhatsApp.
                 </p>
                </div>
               
                <div className="pt-6">
-                 <Button asChild className="w-full h-20 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white border-0 shadow-2xl shadow-[#25D366]/40 transition-all duration-700 hover:scale-105 active:scale-95 group">
-                   <a href="https://api.whatsapp.com/send?phone=5511982322586" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-4">
-                     <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-                       <MessageCircle className="h-6 w-6 fill-white" />
+                 <Button asChild className="w-full h-16 md:h-20 rounded-full bg-[#25D366] hover:bg-[#128C7E] text-white border-0 shadow-2xl shadow-[#25D366]/40 transition-all duration-700 hover:scale-105 active:scale-95 group px-4 md:px-8">
+                    <a href="https://api.whatsapp.com/send?phone=5511982322586" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 md:gap-4">
+                     <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+                       <MessageCircle className="h-5 w-5 md:h-6 md:w-6 fill-white" />
                      </div>
-                     <span className="text-[11px] tracking-[0.4em] font-black uppercase">Agendar via WhatsApp</span>
-                     <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-2 transition-transform" />
+                     <span className="text-[9px] md:text-[11px] tracking-[0.1em] md:tracking-[0.4em] font-black uppercase whitespace-nowrap">Agendar via WhatsApp</span>
+                     <ArrowRight className="h-3 w-3 md:h-4 md:w-4 ml-1 md:ml-2 group-hover:translate-x-2 transition-transform shrink-0" />
                    </a>
                  </Button>
                </div>

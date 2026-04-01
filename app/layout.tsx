@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Inter } from 'next/font/google'
+import { Playfair_Display, Outfit } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -9,15 +9,16 @@ const playfair = Playfair_Display({
   display: 'swap'
 });
 
-const inter = Inter({
+const outfit = Outfit({
   subsets: ["latin"],
   variable: '--font-sans',
   display: 'swap'
 });
 
 export const metadata: Metadata = {
-  title: 'Marayza Estética | Conecta Leste SP',
-  description: 'Clínica de estética especializada em tratamentos faciais, corporais e bem-estar. Realce sua beleza natural em Cidade Tiradentes, São Paulo.',
+  title: 'Marayza Estética | Luxo e Cuidado em Cada Detalhe',
+  description: 'Descubra a excelência em estética avançada. Tratamentos personalizados em Cidade Tiradentes, SP. Realce sua essência com Marayza Esteticista.',
+  keywords: ['estética', 'beleza', 'tratamentos faciais', 'harmonização', 'cidade tiradentes', 'marayza esteticista'],
 }
 
 export default function RootLayout({
@@ -27,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
+      <body className={`${playfair.variable} ${outfit.variable} font-sans antialiased text-foreground bg-background selection:bg-primary/20 selection:text-primary`}>
         {children}
         <Analytics />
       </body>
